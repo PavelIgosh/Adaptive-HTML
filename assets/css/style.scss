@@ -1,4 +1,4 @@
-$btn_color: #FF7400;
+$btn_color:  #FF7400;
 $font_title-color: #D67E34;
 $font_text-color: #656363;
 
@@ -19,6 +19,10 @@ $font_text-color: #656363;
     src: url(../fonts/Tinos-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Cookie';
+    src: url(../fonts/Cookie-Regular.ttf);
+}
 
 *{
     margin: 0;
@@ -35,7 +39,7 @@ li{
 }
 
 .container{
-    max-width: 1100px;
+    max-width: 1110px;
     margin: 0 auto;
     @media (max-width: 1025px) {
         max-width: unset;
@@ -210,7 +214,7 @@ li{
         }
         @media (max-width: 1025px) {
             font-size: 12px;
-            font-weight: 400px;
+            font-weight: 400;
         }
     }
 
@@ -395,7 +399,7 @@ li{
 
     &__text-title{
         color: $font_title-color;
-        font-size: 52px;
+        font-size: 50px;
         margin-bottom: 20px;
         @media (max-width: 1025px){
             font-size: 36px;
@@ -438,7 +442,125 @@ li{
             width: 100%;
 
 
+
+    
         }
     }
 }
 
+.menu{
+    background: url(../img/menu-bgpng.png) no-repeat center center / cover;
+    padding: 100px 0 262px 0;
+
+
+    &__title{
+
+        color: #fff;
+        text-shadow: 5px 5px 4px rgba($color: #000000, $alpha: 1);
+        text-align: center;
+        margin-bottom: 137px;
+        font-family: Tinos;
+        font-weight: 400;
+    }
+
+    &__cards-row{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__card{
+        background-color: #fff;
+        padding: 80px 62px 29px 62px;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    &__price{
+        position: relative;
+        width: 225px;
+        height: 225px;
+        margin-bottom: 22px;
+        background: url(../img/burger.png) no-repeat center center / cover;
+        
+    }
+    
+    &__price-circle{
+        position: absolute;
+        bottom: 5px; 
+        right: 5px; 
+        width: 100px; 
+        height: 100px; 
+        background-color: orange;
+        border-radius: 50%; 
+        border: 5px #fff solid;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        color: white; 
+        font-family: Cookie;
+        font-size: 30px;
+    }
+
+
+    &__btn{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        display: block;
+        width: 220px;
+        font-size: 16px;
+        font-family: OpenSans;
+        font-weight: 700;
+    }
+
+    &__price-title{
+        margin-bottom: 17px;
+        font-size: 26px;
+        font-family: Tinos;
+        font-weight: 400;
+    }
+
+    &__price-text{
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-family: OpenSans;
+    }
+}
+
+.review{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__wrap{
+        padding: 105px 0;
+    }
+
+    &__text{
+        max-width: 860px;
+        font-family: OpenSans;
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    &__review__pic{
+        margin-bottom: 16px;
+    }
+
+    &__role{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: OpenSans;
+        font-weight: 600;
+    }
+
+    &__name{
+        margin-bottom: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: OpenSans;
+        font-weight: 400;
+    }
+}
