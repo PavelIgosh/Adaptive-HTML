@@ -60,12 +60,24 @@ li{
 .main{
     background: url(../img/bg-main.png) no-repeat center center / cover;
     height: 100vh;
+    
+    @media (max-width: 500px) {
+        height: unset;
+        padding-bottom: 305px;
+    }
     &__block{
         max-width: 485px;
         margin-top: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: 863px) {
+            font-size: 30px;
+        }
+        @media (max-width: 500px) {
+            margin-top: 50px;
+            font-size: 25px;
+        }
     }
 
     &__sub-title{
@@ -73,6 +85,12 @@ li{
         font-weight: 400;
         color: $font_title-color;
         font-size: 50px;
+        @media (max-width: 863px) {
+            font-size: 30px;
+        }
+        @media (max-width: 500px) {
+            margin-top: 50px;
+        }
     }
 
     &__title{
@@ -81,7 +99,12 @@ li{
         color: $font_title-color;
         font-size: 80px;
         margin-bottom: 12px;
-
+        @media (max-width: 863px) {
+            font-size: 60px;
+        }
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
     }
 
     &__text{
@@ -90,6 +113,27 @@ li{
         color: #fff;
         font-size: 18px;
         margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &::before{
+            content: '';
+            display: block;
+            width: 61px;
+            height: 2px;
+            background-color: #fff;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 61px;
+            height: 2px;
+            background-color: #fff;
+        }
+
+        @media (max-width: 500px) {
+            display: none;
+        }
     }
 }
 
@@ -263,7 +307,7 @@ li{
         display: flex;
         justify-content: space-between;
         gap: 10px;
-        margin-top: -110px;
+        margin-top: -40px;
         @media (max-width: 767px) {
             flex-direction: column;
             gap: 60px;
@@ -346,13 +390,16 @@ li{
 .order{
     padding-top: 80px;
     padding-bottom: 100px;
-    background-image: url(../img/bg-order.png);
+    background: url(../img/bg-order.png) no-repeat center center / cover;
     background-position: center;
 
     &__text-title{
         color: $font_title-color;
         font-size: 52px;
         margin-bottom: 20px;
+        @media (max-width: 1025px){
+            font-size: 36px;
+        }
     }
 
     &__text-block{
@@ -361,7 +408,11 @@ li{
             font-size: 24px;
             color: #fff;
             font-weight: 700;
+            @media (max-width: 781px){
+                font-size: 24px;
+            }
         }
+
     }
     &__wrap{
         display: flex;
@@ -369,3 +420,25 @@ li{
         align-items: center;
     }
 }
+
+.cook{
+    
+    text-align: center;
+    &__wrap{
+        padding: 137px 0;
+    }
+
+    &__pic-row{
+        margin-top: 107px;
+        display: flex;
+        gap: 30px;
+        @media (max-width: 1120px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+
+        }
+    }
+}
+
