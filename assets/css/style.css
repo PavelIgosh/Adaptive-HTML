@@ -466,6 +466,16 @@ li {
   background: url(../img/menu-bgpng.png) no-repeat center center/cover;
   padding: 100px 0 262px 0;
 }
+@media (max-width: 1120px) {
+  .menu {
+    padding: 80px 0 180px 0;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    padding: 60px 0 110px 0;
+  }
+}
 .menu__title {
   color: #fff;
   text-shadow: 5px 5px 4px black;
@@ -474,15 +484,38 @@ li {
   font-family: Tinos;
   font-weight: 400;
 }
+@media (max-width: 863px) {
+  .menu__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .menu__title {
+    font-size: 40px;
+  }
+}
 .menu__cards-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1120px) {
+  .menu__cards-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .menu__card {
   background-color: #fff;
   padding: 80px 62px 29px 62px;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 1120px) {
+  .menu__card-hide {
+    display: none;
+  }
 }
 .menu__price {
   position: relative;
