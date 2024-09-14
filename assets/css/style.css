@@ -484,12 +484,12 @@ li {
   font-family: Tinos;
   font-weight: 400;
 }
-@media (max-width: 863px) {
+@media (max-width: 768px) {
   .menu__title {
-    font-size: 60px;
+    font-size: 46px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .menu__title {
     font-size: 40px;
   }
@@ -568,6 +568,11 @@ li {
 }
 .review__wrap {
   padding: 105px 0;
+}
+@media (max-width: 767px) {
+  .review__wrap {
+    padding: 0;
+  }
 }
 .review__text {
   max-width: 860px;
